@@ -17,20 +17,31 @@
     @include my-display-flex;
     align-items: center;
     &:nth-child(2n + 1){flex-direction: row-reverse;}
-    &__text{width: 40%;}
-    &__img{
+    .box__text{width: 40%;}
+    .box__img{
       width: 60%;
-      > img{width: 100%;}
+      padding: 20px;
+      > img {width: 100%;}
     }
   }
 }
 @media (max-width: $breakpoint-tablet) {
-  .features__box{
-    flex-wrap: wrap;
-    .box__text{order: 2;}
-    .box__img{order: 1;}
-
-    &:nth-child(2n + 1) {flex-direction: row;}
+  .features{
+    margin: 0 auto;
+    max-width: 100%;
+    &__box{
+      @include my-display-flex;
+      align-items: center;
+      flex-wrap: wrap;
+      &:nth-child(2n + 1){flex-direction: row;}
+      .box__text{width: 100%; order: 2;}
+      .box__img{
+        order: 1;
+        width: 100%;
+        padding: 0px;
+        > img {width: 100%;}
+      }
+    }
   }
 }
 // ------------/features-------------
