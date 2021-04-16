@@ -37,7 +37,7 @@ p {
 }
 
 .med-text {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .big-text {
@@ -109,4 +109,50 @@ p {
 }
 .hero__content h1, .hero__content h4, .hero__content a {
   padding-left: 20px;
+}
+
+.description__content {
+  margin: 0 auto;
+  padding: 12px;
+  max-width: 920px;
+  text-align: center;
+}
+.description__content p {
+  line-height: 30px;
+}
+
+.features {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+.features__box {
+  display: flex;
+  align-items: center;
+}
+.features__box:nth-child(2n+1) {
+  flex-direction: row-reverse;
+}
+.features__box__text {
+  width: 40%;
+}
+.features__box__img {
+  width: 60%;
+}
+.features__box__img > img {
+  width: 100%;
+}
+
+@media (max-width: 1280px) {
+  .features__box {
+    flex-wrap: wrap;
+  }
+  .features__box .box__text {
+    order: 2;
+  }
+  .features__box .box__img {
+    order: 1;
+  }
+  .features__box:nth-child(2n+1) {
+    flex-direction: row;
+  }
 }

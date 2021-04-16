@@ -1,0 +1,36 @@
+// -------------description-------------
+.description{
+  &__content{
+    margin: 0 auto;
+    padding: 12px;
+    max-width: $container-small;
+    text-align: center;
+    p{line-height: 30px;}
+  }
+}
+// -------------/description-------------
+// -------------features-------------
+.features{
+  margin: 0 auto;
+  max-width: $container-basic;
+  &__box{
+    @include my-display-flex;
+    align-items: center;
+    &:nth-child(2n + 1){flex-direction: row-reverse;}
+    &__text{width: 40%;}
+    &__img{
+      width: 60%;
+      > img{width: 100%;}
+    }
+  }
+}
+@media (max-width: $breakpoint-tablet) {
+  .features__box{
+    flex-wrap: wrap;
+    .box__text{order: 2;}
+    .box__img{order: 1;}
+
+    &:nth-child(2n + 1) {flex-direction: row;}
+  }
+}
+// ------------/features-------------
