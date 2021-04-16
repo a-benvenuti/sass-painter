@@ -1,0 +1,15 @@
+.hero{
+  @include my-display-flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  background: url("https://cc-prod.scene7.com/is/image/CCProdAuthor/dt-ps-max-poster-image?$pjpeg$&jpegSize=300&wid=1440") no-repeat;
+  background-size: cover;
+  &__content{
+    width: 100%;
+    max-width: $container-basic;
+    margin: 0 auto;
+    img{height: 80px;}
+    h1, h4, a{padding-left: 20px;}
+  }
+}

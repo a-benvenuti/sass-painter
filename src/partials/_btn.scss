@@ -1,0 +1,18 @@
+.btn{
+  padding: 8px 28px;
+  color: $color-secondary;
+  display: inline-block;
+  border-radius: 100px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+.primary{
+  background-color: $color-primary;
+  border: 3px solid $color-primary;
+  &:hover{background-color: $color-primary500; border: 3px solid $color-primary500;}
+}
+.secondary{
+  background-color: transparent;
+  border: 3px solid $color-secondary;
+  &:hover{background-color: $color-secondary; color: $color-text;}
+}

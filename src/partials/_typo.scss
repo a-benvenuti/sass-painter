@@ -1,7 +1,8 @@
 a{text-decoration: none;}
 li{list-style-type: none;}
-h1, h2, h3, h4, h5, h6, p{color: black;}
-p{color: black;}
+h1, h2, h3, h4, h5, h6, p{color: $color-text;}
+p{color: $color-text;}
+.hero-text{color: $color-secondary;}
 .small-text{font-size: $font-small;}
 .normal-text{font-size: $font-normal;}
 .med-text{font-size: $font-med;}

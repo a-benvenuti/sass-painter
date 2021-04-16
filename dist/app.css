@@ -17,11 +17,15 @@ li {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  color: black;
+  color: #2c2c2c;
 }
 
 p {
-  color: black;
+  color: #2c2c2c;
+}
+
+.hero-text {
+  color: white;
 }
 
 .small-text {
@@ -29,7 +33,7 @@ p {
 }
 
 .normal-text {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .med-text {
@@ -37,7 +41,7 @@ p {
 }
 
 .big-text {
-  font-size: 24px;
+  font-size: 34px;
 }
 
 .mt-10 {
@@ -58,4 +62,51 @@ p {
 
 .mt-50 {
   margin-top: 50px;
+}
+
+.btn {
+  padding: 8px 28px;
+  color: white;
+  display: inline-block;
+  border-radius: 100px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.primary {
+  background-color: #1473e6;
+  border: 3px solid #1473e6;
+}
+.primary:hover {
+  background-color: #0d66d0;
+  border: 3px solid #0d66d0;
+}
+
+.secondary {
+  background-color: transparent;
+  border: 3px solid white;
+}
+.secondary:hover {
+  background-color: white;
+  color: #2c2c2c;
+}
+
+.hero {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  background: url("https://cc-prod.scene7.com/is/image/CCProdAuthor/dt-ps-max-poster-image?$pjpeg$&jpegSize=300&wid=1440") no-repeat;
+  background-size: cover;
+}
+.hero__content {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.hero__content img {
+  height: 80px;
+}
+.hero__content h1, .hero__content h4, .hero__content a {
+  padding-left: 20px;
 }
